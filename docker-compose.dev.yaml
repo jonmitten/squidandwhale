@@ -8,6 +8,9 @@ services:
     - 5000:5000
     volumes:
     - ./:/app
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
 
   mysqldb:
     image: mysql
