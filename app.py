@@ -2,6 +2,7 @@ import json
 import mysql.connector
 import re
 from flask import Flask, request
+
 from urllib.parse import unquote_plus
 
 app = Flask(__name__)
